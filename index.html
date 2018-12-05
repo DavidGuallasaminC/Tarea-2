@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <title>TAREA JAVASCRIPT</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script type="text/javascript">
+var op;
+op= prompt("Ingrese una de las opciones(1.-Ingreso de datos,2.-Operación con nueros,3.-Notas,4.-Traductor):",'')
+switch (op) {
+  case '1':
+  var nombre;
+      var edad;
+      nombre= prompt("Ingresa tu nombre:");
+      Mail= prompt ("Ingresa tu Mail");
+      document.write("Hola");
+      document.write('<br>');
+      document.write("Su nombre es:");
+      document.write (nombre);
+      document.write('<br>');
+      document.write("\nSu correo es:");
+      document.write (Mail);
+      break;
+    case '2':
+    var n1,n2,n3,n4;
+      n1=prompt('Ingrese el primer  numero:','');
+      n2=prompt('Ingrese el segundo numero:','');
+      n3=prompt('Ingrese el tercero numero:','');
+      n4=prompt('Ingrese el cuarto  numero:','');
+      var suma,producto;
+      suma=parseInt(n1)+parseInt(n2);
+      document.write('<br>');
+      document.write('La suma es:'+suma);
+      document.write('<br>');
+      producto=parseInt(n3)*parseInt(n4);
+      document.write('<br>');
+      document.write('El producto es:'+producto);
+      break;
+      case '3':
+      var x=0,cont1=0,cont2=0;
+ while (x<5)
+ {
+   var nota;
+   nota=prompt('Ingrese nota','');
+   if (nota>=7)
+   {
+     cont1++;
+   }
+   else
+   {
+     cont2++;
+   }
+   x++;
+ }
+ document.write('Notas mayores a 7:'+cont1);
+ document.write('<br>');
+ document.write('Notas menores a 7:'+cont2);
+        break;
+        case '4':
+        var palabra;
+      palabra=prompt('Ingrese una de estas palabras (casa,Mesa,perro,Gato) para traducir al inglés','')
+      switch (palabra) {
+        case 'casa':
+        document.write('house');
+          break;
+          case 'mesa':
+          document.write('table');
+            break;
+            case 'perro':
+            document.write('dog');
+              break;
+              case 'gato': document.write('cat');
+                break;
+      }
+          break;
+}
+
+
+    </script>
+
+  </body>
+</html>
